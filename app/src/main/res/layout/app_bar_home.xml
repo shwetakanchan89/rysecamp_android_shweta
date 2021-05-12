@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topp"
+        android:layout_alignParentTop="true" />
+
+    <include
+        layout="@layout/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/topp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/maroon_color"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:id="@+id/frame_layout_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/bottom_menu_circle_selected">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="@dimen/bottom_bar_icon_size"
+                android:layout_height="@dimen/bottom_bar_icon_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/bottom_bar_icon_margin"
+                android:src="@drawable/ic_bottom_bar_home" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layout_stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/stream_icon"
+                android:layout_width="@dimen/bottom_bar_icon_size"
+                android:layout_height="@dimen/bottom_bar_icon_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/bottom_bar_icon_margin"
+                android:src="@drawable/ic_bottom_bar_stream_icon" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layout_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp">
+
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="@dimen/bottom_bar_icon_size"
+                android:layout_height="@dimen/bottom_bar_icon_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/bottom_bar_icon_margin"
+                android:src="@drawable/ic_bottom_bar_notification_icon" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

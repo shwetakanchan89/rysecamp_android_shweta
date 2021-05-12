@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/bookmarks_card_width"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="@dimen/dashboard_card_elevation"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/dashboard_card_corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Walkthrough of Google Analytics"
+            android:textColor="#e4ecee"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bookmark_image_size">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="-200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_dummy_video" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_video_icon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|left"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_logo_video_overlay_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="JODY MOORE"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="Marketing Head, Curify.com"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="@dimen/bookmark_card_icons_sizes"
+                android:layout_height="@dimen/bookmark_card_icons_sizes"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_bookmark_selected_icon" />
+
+
+            <ImageView
+                android:layout_width="@dimen/bookmark_card_icons_sizes"
+                android:layout_height="@dimen/bookmark_card_icons_sizes"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_share_icon_grey" />
+
+
+            <ImageView
+                android:layout_width="@dimen/bookmark_card_icons_sizes"
+                android:layout_height="@dimen/bookmark_card_icons_sizes"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_chat_icon_gray" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_background_primary"
+        android:padding="15dp">
+
+      <!--  <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/notification_image"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_notifications_count_icon"
+            android:layout_centerVertical="true"/>-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/notification_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_dummy_profile_photo"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/maroon_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/notification_image"
+            android:layout_toStartOf="@+id/time"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanya Hope"
+                    android:textSize="13sp"
+                    android:id="@+id/name"
+                    android:textColor="#231f20"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hopeslife"
+                    android:id="@+id/usernmae"
+                    android:textSize="13sp"
+                    android:layout_marginStart="2dp"
+                    android:textColor="#58595b"
+                    android:fontFamily="@font/nunito_regular"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replied to your comment : "
+                android:textSize="13sp"
+                android:layout_marginTop="3dp"
+                android:textColor="#58595b"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_text"
+                android:maxLength="60"
+                android:textSize="13sp"
+                android:textColor="#58595b"
+                android:fontFamily="@font/nunito_bold"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today 5:00 AM"
+            android:fontFamily="@font/nunito_regular"
+            android:textColor="#bcbec0"
+            android:textSize="10sp"
+            android:id="@+id/time"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

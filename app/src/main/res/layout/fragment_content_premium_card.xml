@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    android:layout_marginTop="20dp"
+    android:elevation="@dimen/dashboard_card_elevation"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/dashboard_card_corner_radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footer_actions_layout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_premium_icon" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bookmark_circle_icon" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Chosing\nENTREPRENEURSHIP"
+                        android:textColor="#5b6061"
+                        android:textSize="15sp" />
+
+                    <RatingBar
+                        android:id="@+id/RATINGinitialvalueratingID"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:theme="@style/customRatingBar" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Read reviews"
+                            android:textColor="#1c75bc"
+                            android:textSize="11sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/dashboard_search_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="6857 views"
+                            android:textColor="@color/dashboard_search_color"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/maroon_color" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_user_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="Tony\nStark"
+                        android:textColor="#5b6061"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Welcome to Google Analytics\nWe will take you through:"
+                android:textColor="#58595b"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer_actions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4ecee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/bookmark_card_icons_sizes"
+                    android:layout_height="@dimen/bookmark_card_icons_sizes"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bookmark_selected_icon" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/bookmark_card_icons_sizes"
+                    android:layout_height="@dimen/bookmark_card_icons_sizes"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_share_icon_grey" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/bookmark_card_icons_sizes"
+                    android:layout_height="@dimen/bookmark_card_icons_sizes"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_chat_icon_gray" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

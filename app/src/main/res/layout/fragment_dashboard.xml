@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dashboard_inner_padding"
+        android:paddingBottom="@dimen/dashboard_inner_padding">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/dashboard_card_corner_radius"
+            app:cardElevation="@dimen/dashboard_card_elevation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="Search for a course..."
+                    android:textColor="@color/dashboard_search_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search_dashboard" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Spotlight"
+            android:textColor="#5b6061"
+            android:textSize="@dimen/title_text_size" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/dashboard_tiles_top" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dashboard_tiles_bottom" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_spotlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/dashboard_pager_dots" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="What's New"
+            android:textColor="#5b6061"
+            android:textSize="@dimen/title_text_size" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_whats_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Our Popular Streams"
+            android:textColor="#5b6061"
+            android:textSize="@dimen/title_text_size" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_popular_streams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+</ScrollView>

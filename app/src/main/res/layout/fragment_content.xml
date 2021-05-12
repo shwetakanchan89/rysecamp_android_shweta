@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="handlers"
+            type="com.rysecamp.controller.fragments.ContentFragment" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dashboard_inner_padding_start"
+        android:paddingTop="@dimen/dashboard_inner_padding"
+        android:background="@color/color_background_primary"
+        android:paddingEnd="@dimen/dashboard_inner_padding"
+        android:paddingBottom="@dimen/dashboard_inner_padding">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="@{handlers::onStreamsClick}"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="Streams"
+                    android:textColor="#741b47"
+                    android:textSize="@dimen/tablayout_text_size" />
+
+                <View
+                    android:id="@+id/streams_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tablayout_height"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/selected_left_layout" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="@{handlers::onBookmarksClick}"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="Bookmarks"
+                    android:textColor="#741b47"
+                    android:textSize="@dimen/tablayout_text_size" />
+
+                <View
+                    android:id="@+id/bookmarks_backgrounds"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tablayout_height"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/right_layout" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_top"
+            android:background="@android:color/transparent"
+            android:id="@+id/container_content"/>
+
+    </RelativeLayout>
+</layout>

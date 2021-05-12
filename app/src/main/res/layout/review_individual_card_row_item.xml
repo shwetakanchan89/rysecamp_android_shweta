@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E5E5E5"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/notification_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_dummy_profile_photo"
+        app:civ_border_color="#F9E786"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/notification_image"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jiah Sen"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#231f20"
+            android:textSize="13sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jiahsen03"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textColor="#58595b"
+            android:textSize="13sp"
+            android:layout_marginLeft="2dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/notification_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just commented on"
+            android:textColor="#58595b"
+            android:textSize="13sp"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/nunito_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales and Marketing"
+            android:layout_marginLeft="3dp"
+            android:textColor="#0087ff"
+            android:textSize="13sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/notification_image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:maxLength="60"
+            android:text="Lorem ipsum dolor sit amet, Consectet\nadipiscing elit."
+            android:textColor="#58595b"
+            android:layout_marginLeft="3dp"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/nunito_regular"
+        android:text="1 hour ago"
+        android:textColor="#bcbec0"
+        android:textSize="10sp" />
+
+
+    <RelativeLayout
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="60dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_wishlist_icon" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="67"
+                android:textColor="#c6cfd1"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_share_icon_grey" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="11"
+                android:textColor="#c6cfd1"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_chat_icon_gray" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="25"
+                android:textColor="#c6cfd1"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/bookmarks_card_width"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="@dimen/dashboard_card_elevation"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/dashboard_card_corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Walkthrough of Google Analytics"
+            android:textColor="#e4ecee"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/dummy_text"
+                android:textColor="#58595b"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="15sp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

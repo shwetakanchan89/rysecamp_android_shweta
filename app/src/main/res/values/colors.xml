@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e4ecee</color>
+    <color name="colorPrimaryDark">#e4ecee</color>
+    <color name="colorAccent">#C7C9CA</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorOffWhite">#e3eaeaea</color>
+
+    <color name="splash_text_shadow_color">#000000</color>
+    <color name="login_heading_text_color">#78797b</color>
+    <color name="login_text_color">#78797b</color>
+    <color name="login_hint_color">#c6cfd1</color>
+    <color name="dashboard_search_color">#c6cfff</color>
+    <color name="maroon_color">#741b48</color>
+    <color name="color_app_bar">#ffffff</color>
+    <color name="rating_disable_color">#C2C2C3</color>
+    <color name="content_heading_text_color">#58595b</color>
+    <color name="progress_bac_color">#ffffff</color>
+    <color name="progress_bac_color_selected">#741b48</color>
+    <color name="color_background_primary">#E5E5E5</color>
+
+    <array name="array_dot_active">
+        <item>@color/colorWhite</item>
+        <item>@color/colorWhite</item>
+        <item>@color/colorWhite</item>
+        <item>@color/colorWhite</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/colorOffWhite</item>
+        <item>@color/colorOffWhite</item>
+        <item>@color/colorOffWhite</item>
+        <item>@color/colorOffWhite</item>
+    </array>
+
+</resources>

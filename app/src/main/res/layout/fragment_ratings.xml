@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="#E5E5E5"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Rate this course"
+            android:textColor="#58595b"
+            android:textSize="18sp" />
+
+        <RatingBar
+            android:id="@+id/RATINGinitialvalueratingID"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rate_border"
+            android:rating="0" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginTop="15dp"
+            android:text="Comment on this course"
+            android:textColor="#58595b"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/dashboard_card_corner_radius"
+            app:cardElevation="@dimen/dashboard_card_elevation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="Write a comment or question..."
+                    android:textColor="@color/dashboard_search_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search_dashboard" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/overall_rating_image"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite" />
+
+
+        <include
+            layout="@layout/comments_card_row_item"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite" />
+
+
+        <include
+            layout="@layout/comments_card_row_item"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite" />
+
+
+        <include
+            layout="@layout/comments_card_row_item"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
